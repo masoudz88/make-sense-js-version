@@ -1,6 +1,6 @@
 # makesense.ai JavaScript Conversion
 
-This repo is a converted version of makesense.ai, where I automated the conversion from TypeScript to JavaScript.
+This repo is a converted version of [makesense.ai](https://www.makesense.ai), where I automated the conversion from TypeScript to JavaScript.
 
 ## Steps to Convert
 
@@ -59,7 +59,10 @@ Just a bit of bash to change our .ts files to .js and our .tsx to .jsx:
 
 ```bash
 find ./ -depth -name "*.ts" -exec sh -c 'mv "$1" "${1%.ts}.js"' _ {} \;
+```
+```bash
 find ./ -depth -name "*.tsx" -exec sh -c 'mv "$1" "${1%.tsx}.jsx"' _ {} \;
+```bash
 ```
 5. Build and Fix
 Run your build step and see what's broken, then fix accordingly.
