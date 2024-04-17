@@ -63,7 +63,5 @@ find ./ -depth -name "*.ts" -exec sh -c 'mv "$1" "${1%.ts}.js"' _ {} \;
 ```bash
 find ./ -depth -name "*.tsx" -exec sh -c 'mv "$1" "${1%.tsx}.jsx"' _ {} \;
 ```
-```bash
-```
 5. Build and Fix
 Run your build step and see what's broken, then fix accordingly.
